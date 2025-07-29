@@ -8,9 +8,9 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
-  permissions:
-    contents: read
-    packages: write
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   build:
@@ -38,7 +38,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ GHCR_IMAGE }}
+          images: ${{ env.GHCR_IMAGE }}
 
       - name: Set up docker-buildx
         uses: docker/setup-buildx-action@v4
