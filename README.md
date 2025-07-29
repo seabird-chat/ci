@@ -7,7 +7,7 @@ A collection of useful re-usable Github Actions workflows
 This is the boilerplate for building a docker image, generally used during PR
 runs as a confidence check.
 
-## Docker Build
+## Docker Publish
 
 This is roughly based on the excellent [multi-arch-docker-github-workflow]. It
 provides a common pattern for building a docker image and pushing both
