@@ -2,6 +2,11 @@
 
 A collection of useful re-usable Github Actions workflows
 
+## Docker PR
+
+This is the boilerplate for building a docker image, generally used during PR
+runs as a confidence check.
+
 ## Docker Build
 
 This is roughly based on the excellent [multi-arch-docker-github-workflow]. It
